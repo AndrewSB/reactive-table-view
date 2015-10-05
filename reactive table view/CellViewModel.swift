@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import ReactiveCocoa
 
 class CellViewModel {
 
-    var cells = MutableProperty<CellModel>([CellModel]())
+    var cells = MutableProperty([CellModel]())
     
     init() {
-        NSTimer.schedule(repeatInterval: 5) {
+        NSTimer.schedule(repeatInterval: 5) { _ in
             self.cells.value.append(CellModel())
  
         }

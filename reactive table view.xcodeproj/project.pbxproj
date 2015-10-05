@@ -15,7 +15,27 @@
 		465BD9131BC248BB00B41287 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465BD9121BC248BB00B41287 /* CellViewModel.swift */; };
 		465BD9151BC2498D00B41287 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465BD9141BC2498D00B41287 /* CellModel.swift */; };
 		465BD9171BC249F300B41287 /* NSTimerClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465BD9161BC249F300B41287 /* NSTimerClosure.swift */; };
+		465BD91F1BC24BF800B41287 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465BD91A1BC24BA600B41287 /* ReactiveCocoa.framework */; };
+		465BD9201BC24BF800B41287 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 465BD91A1BC24BA600B41287 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		465BD9211BC24BF800B41287 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465BD91B1BC24BA600B41287 /* Result.framework */; };
+		465BD9221BC24BF800B41287 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 465BD91B1BC24BA600B41287 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		465BD9261BC24E3A00B41287 /* TableViewBindingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465BD9251BC24E3A00B41287 /* TableViewBindingHelper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		465BD9231BC24BF800B41287 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				465BD9201BC24BF800B41287 /* ReactiveCocoa.framework in Embed Frameworks */,
+				465BD9221BC24BF800B41287 /* Result.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		465BD8FA1BC246AE00B41287 /* reactive table view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reactive table view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +48,9 @@
 		465BD9121BC248BB00B41287 /* CellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		465BD9141BC2498D00B41287 /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		465BD9161BC249F300B41287 /* NSTimerClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerClosure.swift; sourceTree = "<group>"; };
+		465BD91A1BC24BA600B41287 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = SOURCE_ROOT; };
+		465BD91B1BC24BA600B41287 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
+		465BD9251BC24E3A00B41287 /* TableViewBindingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewBindingHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465BD91F1BC24BF800B41287 /* ReactiveCocoa.framework in Frameworks */,
+				465BD9211BC24BF800B41287 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				465BD8FC1BC246AE00B41287 /* reactive table view */,
+				465BD91E1BC24BAA00B41287 /* Frameworks */,
 				465BD8FB1BC246AE00B41287 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,11 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				465BD8FD1BC246AE00B41287 /* AppDelegate.swift */,
-				465BD9101BC2483900B41287 /* InitialViewController.swift */,
-				465BD9121BC248BB00B41287 /* CellViewModel.swift */,
-				465BD9141BC2498D00B41287 /* CellModel.swift */,
-				465BD9161BC249F300B41287 /* NSTimerClosure.swift */,
-				465BD9011BC246AE00B41287 /* Main.storyboard */,
+				465BD9191BC24A8700B41287 /* Views */,
+				465BD9241BC24C1D00B41287 /* Models */,
+				465BD9181BC24A7D00B41287 /* Helpers */,
 				465BD90F1BC2473E00B41287 /* Resources */,
 			);
 			path = "reactive table view";
@@ -81,6 +105,43 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		465BD9181BC24A7D00B41287 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				465BD9161BC249F300B41287 /* NSTimerClosure.swift */,
+				465BD9251BC24E3A00B41287 /* TableViewBindingHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		465BD9191BC24A8700B41287 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				465BD9101BC2483900B41287 /* InitialViewController.swift */,
+				465BD9011BC246AE00B41287 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		465BD91E1BC24BAA00B41287 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				465BD91A1BC24BA600B41287 /* ReactiveCocoa.framework */,
+				465BD91B1BC24BA600B41287 /* Result.framework */,
+			);
+			name = Frameworks;
+			path = "reactive table view";
+			sourceTree = "<group>";
+		};
+		465BD9241BC24C1D00B41287 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				465BD9121BC248BB00B41287 /* CellViewModel.swift */,
+				465BD9141BC2498D00B41287 /* CellModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +152,7 @@
 				465BD8F61BC246AE00B41287 /* Sources */,
 				465BD8F71BC246AE00B41287 /* Frameworks */,
 				465BD8F81BC246AE00B41287 /* Resources */,
+				465BD9231BC24BF800B41287 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +216,7 @@
 				465BD8FE1BC246AE00B41287 /* AppDelegate.swift in Sources */,
 				465BD9131BC248BB00B41287 /* CellViewModel.swift in Sources */,
 				465BD9111BC2483900B41287 /* InitialViewController.swift in Sources */,
+				465BD9261BC24E3A00B41287 /* TableViewBindingHelper.swift in Sources */,
 				465BD9171BC249F300B41287 /* NSTimerClosure.swift in Sources */,
 				465BD9151BC2498D00B41287 /* CellModel.swift in Sources */,
 			);
@@ -268,6 +331,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "reactive table view/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tfw.reactive-table-view";
@@ -279,6 +346,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "reactive table view/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tfw.reactive-table-view";

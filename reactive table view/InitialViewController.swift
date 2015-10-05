@@ -9,9 +9,12 @@
 import UIKit
 
 class InitialViewController: UIViewController {
-    let viewModel = 
+    
+    let viewModel = CellViewModel()
+    var bindingHelper: TableViewBindingHelper<CellViewModel>!
 
     @IBOutlet weak var tableView: UITableView! { didSet {
+        bindingHelper = TableViewBindingHelper<CellViewModel>(tableView: tableView, sourceSignal: viewModel.cells.producer, reuseIdentifier: "lol", selectionCommand: nil)
     }}
     
     
