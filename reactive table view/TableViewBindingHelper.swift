@@ -13,8 +13,10 @@ import ReactiveCocoa
 import UIKit
 
 protocol ReactiveView {
-    var viewModel: AnyObject! { get set }
+    var viewModel: AnyObject? { get set }
 }
+
+protocol ViewModel {}
 
 // a helper that makes it easier to bind to UITableView instances
 // see: http://www.scottlogic.com/blog/2014/05/11/reactivecocoa-tableview-binding.html

@@ -7,13 +7,16 @@
 //
 
 import Foundation
+import UIKit // bad practice, importing because foundation can't represent a background color
 
-class CellModel {
+struct CellModel {
     
-    let someNumber: Int
+    let importantNumber: Int
+    let backgroundColor: UIColor
     
     init() {
-        someNumber = Int(arc4random_uniform(999))
+        importantNumber = Int(arc4random_uniform(999))
+        backgroundColor = UIColor.randomColor()
         
         print("inited cell model")
     }

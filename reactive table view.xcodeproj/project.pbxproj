@@ -12,7 +12,7 @@
 		465BD9051BC246AE00B41287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 465BD9041BC246AE00B41287 /* Assets.xcassets */; };
 		465BD9081BC246AE00B41287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465BD9061BC246AE00B41287 /* LaunchScreen.storyboard */; };
 		465BD9111BC2483900B41287 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465BD9101BC2483900B41287 /* InitialViewController.swift */; };
-		465BD9131BC248BB00B41287 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465BD9121BC248BB00B41287 /* CellViewModel.swift */; };
+		465BD9131BC248BB00B41287 /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465BD9121BC248BB00B41287 /* InitialViewModel.swift */; };
 		465BD9151BC2498D00B41287 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465BD9141BC2498D00B41287 /* CellModel.swift */; };
 		465BD9171BC249F300B41287 /* NSTimerClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465BD9161BC249F300B41287 /* NSTimerClosure.swift */; };
 		465BD91F1BC24BF800B41287 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465BD91A1BC24BA600B41287 /* ReactiveCocoa.framework */; };
@@ -20,6 +20,9 @@
 		465BD9211BC24BF800B41287 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465BD91B1BC24BA600B41287 /* Result.framework */; };
 		465BD9221BC24BF800B41287 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 465BD91B1BC24BA600B41287 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		465BD9261BC24E3A00B41287 /* TableViewBindingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465BD9251BC24E3A00B41287 /* TableViewBindingHelper.swift */; };
+		46DD515D1BC8777200A60BF8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD515C1BC8777200A60BF8 /* TableViewCell.swift */; };
+		46DD515F1BC8784100A60BF8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD515E1BC8784100A60BF8 /* UIColorExtension.swift */; };
+		46DD51611BC878A500A60BF8 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD51601BC878A500A60BF8 /* CellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,12 +48,15 @@
 		465BD9071BC246AE00B41287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		465BD9091BC246AE00B41287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		465BD9101BC2483900B41287 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		465BD9121BC248BB00B41287 /* CellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		465BD9121BC248BB00B41287 /* InitialViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewModel.swift; sourceTree = "<group>"; };
 		465BD9141BC2498D00B41287 /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		465BD9161BC249F300B41287 /* NSTimerClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerClosure.swift; sourceTree = "<group>"; };
 		465BD91A1BC24BA600B41287 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = SOURCE_ROOT; };
 		465BD91B1BC24BA600B41287 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
 		465BD9251BC24E3A00B41287 /* TableViewBindingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewBindingHelper.swift; sourceTree = "<group>"; };
+		46DD515C1BC8777200A60BF8 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		46DD515E1BC8784100A60BF8 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		46DD51601BC878A500A60BF8 /* CellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 			children = (
 				465BD9161BC249F300B41287 /* NSTimerClosure.swift */,
 				465BD9251BC24E3A00B41287 /* TableViewBindingHelper.swift */,
+				46DD515E1BC8784100A60BF8 /* UIColorExtension.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				465BD9101BC2483900B41287 /* InitialViewController.swift */,
+				46DD515C1BC8777200A60BF8 /* TableViewCell.swift */,
 				465BD9011BC246AE00B41287 /* Main.storyboard */,
 			);
 			name = Views;
@@ -136,7 +144,8 @@
 		465BD9241BC24C1D00B41287 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				465BD9121BC248BB00B41287 /* CellViewModel.swift */,
+				465BD9121BC248BB00B41287 /* InitialViewModel.swift */,
+				46DD51601BC878A500A60BF8 /* CellViewModel.swift */,
 				465BD9141BC2498D00B41287 /* CellModel.swift */,
 			);
 			name = Models;
@@ -214,10 +223,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				465BD8FE1BC246AE00B41287 /* AppDelegate.swift in Sources */,
-				465BD9131BC248BB00B41287 /* CellViewModel.swift in Sources */,
+				465BD9131BC248BB00B41287 /* InitialViewModel.swift in Sources */,
 				465BD9111BC2483900B41287 /* InitialViewController.swift in Sources */,
+				46DD515F1BC8784100A60BF8 /* UIColorExtension.swift in Sources */,
+				46DD51611BC878A500A60BF8 /* CellViewModel.swift in Sources */,
 				465BD9261BC24E3A00B41287 /* TableViewBindingHelper.swift in Sources */,
 				465BD9171BC249F300B41287 /* NSTimerClosure.swift in Sources */,
+				46DD515D1BC8777200A60BF8 /* TableViewCell.swift in Sources */,
 				465BD9151BC2498D00B41287 /* CellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

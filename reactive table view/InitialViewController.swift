@@ -10,7 +10,7 @@ import UIKit
 
 class InitialViewController: UIViewController {
     
-    let viewModel = CellViewModel()
+    let viewModel = InitialViewModel()
     var bindingHelper: TableViewBindingHelper<CellViewModel>!
 
     @IBOutlet weak var tableView: UITableView! { didSet {
