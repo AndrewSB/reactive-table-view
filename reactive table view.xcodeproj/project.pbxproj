@@ -93,8 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				465BD8FD1BC246AE00B41287 /* AppDelegate.swift */,
-				465BD9191BC24A8700B41287 /* Views */,
-				465BD9241BC24C1D00B41287 /* Models */,
+				46DD51631BC8841E00A60BF8 /* View */,
+				46DD51621BC8841400A60BF8 /* Cell */,
+				465BD9011BC246AE00B41287 /* Main.storyboard */,
 				465BD9181BC24A7D00B41287 /* Helpers */,
 				465BD90F1BC2473E00B41287 /* Resources */,
 			);
@@ -121,16 +122,6 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
-		465BD9191BC24A8700B41287 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				465BD9101BC2483900B41287 /* InitialViewController.swift */,
-				46DD515C1BC8777200A60BF8 /* TableViewCell.swift */,
-				465BD9011BC246AE00B41287 /* Main.storyboard */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		465BD91E1BC24BAA00B41287 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,14 +132,23 @@
 			path = "reactive table view";
 			sourceTree = "<group>";
 		};
-		465BD9241BC24C1D00B41287 /* Models */ = {
+		46DD51621BC8841400A60BF8 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				465BD9121BC248BB00B41287 /* InitialViewModel.swift */,
+				46DD515C1BC8777200A60BF8 /* TableViewCell.swift */,
 				46DD51601BC878A500A60BF8 /* CellViewModel.swift */,
 				465BD9141BC2498D00B41287 /* CellModel.swift */,
 			);
-			name = Models;
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		46DD51631BC8841E00A60BF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				465BD9121BC248BB00B41287 /* InitialViewModel.swift */,
+				465BD9101BC2483900B41287 /* InitialViewController.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

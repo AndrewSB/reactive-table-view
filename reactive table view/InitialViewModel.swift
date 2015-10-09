@@ -14,9 +14,10 @@ class InitialViewModel {
     var cells = MutableProperty([CellViewModel]())
     
     init() {
-        NSTimer.schedule(repeatInterval: 0.5) { _ in
+        self.cells.value.append(CellViewModel(model: CellModel()))
+        
+        NSTimer.schedule(repeatInterval: 2) { _ in
             self.cells.value.append(CellViewModel(model: CellModel()))
- 
         }
     }
 }
