@@ -13,9 +13,10 @@ class InitialViewController: UIViewController {
     let viewModel = InitialViewModel()
     var bindingHelper: TableViewBindingHelper<CellViewModel>!
 
-    @IBOutlet weak var tableView: UITableView! { didSet {
-        bindingHelper = TableViewBindingHelper<CellViewModel>(tableView: tableView, sourceSignal: viewModel.cells.producer, reuseIdentifier: "lol", selectionCommand: nil)
-    }}
-    
+    @IBOutlet weak var tableView: UITableView! { 
+        didSet {
+            bindingHelper = TableViewBindingHelper<CellViewModel>(tableView: tableView, sourceSignal: viewModel.cells.producer, reuseIdentifier: "lol", selectionCommand: nil)
+        }
+    }
     
 }
